@@ -1,6 +1,6 @@
 <script>
-  import Aside from "../Layout/Aside.svelte";
-  import Header from "../Layout/Header.svelte";
+  import Aside from "../../Layout/Aside.svelte";
+  import Header from "../../Layout/Header.svelte";
 </script>
 
 <Aside />

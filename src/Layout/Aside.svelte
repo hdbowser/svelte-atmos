@@ -1,3 +1,7 @@
+<script>
+  import { link } from "svelte-spa-router";
+</script>
+
 <aside class="admin-sidebar">
   <div class="admin-sidebar-brand">
     <!-- begin sidebar branding-->
@@ -7,14 +11,18 @@
       width="40"
       alt="atmos Logo" />
     <span class="admin-brand-content">
-      <a href="index.html">atmos</a>
+      <a href="/" use:link>atmos</a>
     </span>
     <!-- end sidebar branding-->
     <div class="ml-auto">
       <!-- sidebar pin-->
-      <a href="#!" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle" />
+      <a href="#!" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle">
+        <!--  -->
+      </a>
       <!-- sidebar close for mobile device-->
-      <a href="#!" class="admin-close-sidebar" />
+      <a href="#!" class="admin-close-sidebar">
+        <!--  -->
+      </a>
     </div>
   </div>
   <div class="admin-sidebar-wrapper js-scrollbar">
@@ -22,7 +30,7 @@
     <ul class="menu">
       <!--list item begins-->
       <li class="menu-item active">
-        <a href="#!" class="menu-link">
+        <a href="/" use:link class="menu-link">
           <span class="menu-label">
             <span class="menu-name">Escritorio</span>
           </span>
@@ -53,7 +61,7 @@
         <!--submenu-->
         <ul class="sub-menu">
           <li class="menu-item">
-            <a href="#!" class=" menu-link">
+            <a href="/Usuario/Index" use:link class=" menu-link">
               <span class="menu-label">
                 <span class="menu-name">Usuarios</span>
               </span>
@@ -80,5 +88,4 @@
     </ul>
     <!-- Menu List Ends-->
   </div>
-
 </aside>
